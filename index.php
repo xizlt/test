@@ -52,16 +52,7 @@ $fileName = "base1.txt";
 $search = 'он';
 
 // Параметры файла
-$params = ['maxSize' => '850000',
-    'mime-type' => [
-        'text/plain',
-        'text/html',
-        'text/css',
-        'application/javascript',
-        'application/json',
-        'application/xml'
-    ],
-];
+$params = require "config.php";
 
 checkFile($fileName, $params);
 $file = file($fileName);
